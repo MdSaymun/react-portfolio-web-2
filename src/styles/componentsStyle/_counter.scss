@@ -1,0 +1,10 @@
+@import "../var";
+@import "../mixin";
+
+.our-info-container {
+  .our-info-center {
+    .info-single {
+      box-shadow: $boxShadowLite;
+    }
+  }
+}

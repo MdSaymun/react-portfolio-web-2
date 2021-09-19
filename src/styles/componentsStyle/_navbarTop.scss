@@ -1,0 +1,22 @@
+@import "../var";
+@import "../mixin";
+// navbarTop style start
+.section-navbar-top {
+  @media (max-width: 550px) {
+    display: none;
+  }
+  background-color: $colorPrimary;
+  color: #fff;
+  .navbar-top-header {
+    .icons-social {
+      span {
+        margin: 0 5px;
+      }
+    }
+    .navbar-top-buttons {
+      span {
+        margin: 0 0.4rem;
+      }
+    }
+  }
+}

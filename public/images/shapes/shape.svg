@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+	<title>New Project</title>
+	<defs>
+		<image  width="640" height="480" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgAQMAAAAPH06nAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAD1JREFUeJztwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4M8Al+AAAfQ5dkcAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #dfdfdf;stroke-width: 15 } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+	<path id="Shape 1" class="shp0" d="M117 8L523 8L523 472L117 472L117 8Z" />
+</svg>

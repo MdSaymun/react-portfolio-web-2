@@ -1,0 +1,47 @@
+@import "../var";
+@import "../mixin";
+
+.section_portfolio {
+  .section-portfolio-center {
+    .items-portfolio {
+      .row-portfolio-items {
+        .box-single-portfolio {
+          overflow: hidden;
+          &:hover {
+            .porfolio-info {
+              transform: translateX(0%);
+              visibility: visible;
+            }
+          }
+          .porfolio-info {
+            transform: translateX(-100%);
+            transition: $transitionNormal;
+            cursor: pointer;
+            visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          }
+        }
+      }
+
+      .seemore-btn-portfolio {
+        @media (min-width: 800px) {
+          width: 200px;
+          padding: 1rem 2rem;
+          text-align: center;
+          font-size: 1.2rem;
+        }
+        background-color: $colorPrimary;
+        display: block;
+        width: 120px;
+        margin: 2rem auto;
+        text-align: center;
+        &:hover {
+          background-color: $colorPrimaryHover;
+        }
+      }
+    }
+  }
+}

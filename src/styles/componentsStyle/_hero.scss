@@ -1,0 +1,21 @@
+@import "../mixin";
+@import "../var";
+
+.section-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .section-hero-center {
+    .my-info-hero {
+      max-width: 650px;
+      color: #000;
+      .button-hero-contact {
+        background-color: $colorPrimary;
+        transition: $transitionNormal;
+        &:hover {
+          background-color: $colorPrimaryHover;
+        }
+      }
+    }
+  }
+}
