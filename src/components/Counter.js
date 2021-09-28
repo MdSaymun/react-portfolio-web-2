@@ -1,6 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
-import "../styles/componentsStyle/_counter.scss";
+import "./comStyles/counter.scss";
 const Counter = (props) => {
   const { counterValue, heading, amount, isCounterPosition } = props;
   return (

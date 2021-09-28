@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/componentsStyle/_sectionHeading.scss";
+import "./comStyles/sectionHeading.scss";
 const SectionHeading = ({ heading }) => {
   return (
     <>

@@ -1,10 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Col, Row } from "react-bootstrap";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { makeStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
-import "../styles/pagesStyle/_aboutMe.scss";
 import SectionHeading from "../components/SectionHeading";
+import "./pagesStyles/aboutMe.scss";
+
 const BorderLinearProgress = makeStyles((theme) => ({
   root: {
     height: 8,
@@ -42,6 +43,9 @@ const About = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  //
+
   return (
     <section className="section-about-me my-20">
       <div className="section md:container about-me-center">
@@ -57,8 +61,8 @@ const About = () => {
           <Col lg={6}>
             <div className="about-me-info">
               <h3 className="font-bold mb-1">I am a Designer</h3>
-              <h1 className="font-bold mb-4">My Real Life is Up to You?</h1>
-              <p className="w-4/5 text-gray-500 mb-10">
+              <h1 className="font-bold lg:mb-4">My Real Life is Up to You?</h1>
+              <p className="lg:w-4/5  text-gray-500 mb-10">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo onsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                 pariatur. Excepteur sint occaecat Pidatat non proident, sunt in culpa qui officia deserunt mollit anim id est erun laborum. Sed ut perspiciatis unde omnis
@@ -77,7 +81,7 @@ const About = () => {
             {skill.map((item, i) => {
               return (
                 <Col md={6} key={i}>
-                  <div className="box-skill p-4 py-3">
+                  <div className="box-skill lg:p-4 py-3">
                     <div className="skill-info flex items-center justify-between mb-2">
                       <span>{item.name}</span>
                       <span className="skill-label">{Math.round(ismouseOnSkill ? item.value : 0)}%</span>

@@ -1,0 +1,15 @@
+@import "../../styles/config/var";
+@import "../../styles/config/mixin";
+
+.button-go-to-top {
+  position: fixed;
+  bottom: 0%;
+  right: 2%;
+  transform: translateY(100px);
+  z-index: 100;
+  transition: 0.5s;
+}
+.show-go-to-top-btn {
+  bottom: 5%;
+  transform: translateY(0);
+}

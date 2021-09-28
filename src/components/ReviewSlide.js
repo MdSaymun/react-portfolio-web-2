@@ -13,7 +13,7 @@ import { AiFillStar } from "react-icons/ai";
 import SwiperCore, { Autoplay, Pagination } from "swiper/core";
 
 // custom style
-import "../styles/componentsStyle/_slider.scss";
+import "./comStyles/slider.scss";
 
 // install Swiper modules
 SwiperCore.use([Autoplay, Pagination]);
@@ -24,11 +24,10 @@ export default function SwiperCom() {
   return (
     <div className="slider-main w-4/5 mx-auto">
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={20}
-        slidesPerGroup={2}
         breakpoints={{
-          640: {
+          400: {
             slidesPerView: 1,
             spaceBetween: 0,
           },
@@ -47,12 +46,11 @@ export default function SwiperCom() {
           clickable: true,
         }}
         loop={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         // centeredSlides={true}
-
         className="mySwiper"
       >
         {clientReview.map((item, i) => {

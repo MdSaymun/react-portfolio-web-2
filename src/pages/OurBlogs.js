@@ -7,7 +7,7 @@ const OurBlogs = () => {
   const { blogData } = useGlobalContext();
 
   return (
-    <section className="section-our-blogs">
+    <section className="section-our-blogs my-10">
       <div className="ourBlog-center md:container section">
         <div className="ourBlog-header mb-10">
           <SectionHeading heading="Our Letest News" />

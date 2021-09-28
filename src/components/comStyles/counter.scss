@@ -1,0 +1,17 @@
+@import "../../styles/config/var";
+@import "../../styles/config/mixin";
+
+.our-info-container {
+  .our-info-center {
+    @include mobile {
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+@include tablate {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+    .info-single {
+      box-shadow: $boxShadowLite;
+    }
+  }
+}
+

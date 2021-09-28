@@ -4,7 +4,7 @@ export const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchData(setData, url);
@@ -26,8 +26,15 @@ const AppProvider = ({ children }) => {
     }
   };
   const { blogData } = data;
-
-  return <AppContext.Provider value={{ data, loading, blogData }}>{children}</AppContext.Provider>;
+  // sidebar functionality
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const openSidebar = () => {
+    setIsSidebarOpen(true);
+  };
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
+  return <AppContext.Provider value={{ data, loading, blogData, isSidebarOpen, openSidebar, closeSidebar }}>{children}</AppContext.Provider>;
 };
 export default AppProvider;
 export const useGlobalContext = () => {

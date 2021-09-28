@@ -1,0 +1,14 @@
+@import "../../styles/config/mixin";
+@import "../../styles/config/var";
+
+.section_services {
+  .services-center {
+    .box-services {
+      &:hover {
+        box-shadow: $boxShadowNormal;
+      }
+      transition: $transitionNormal;
+      cursor: pointer;
+    }
+  }
+}

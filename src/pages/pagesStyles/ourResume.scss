@@ -1,0 +1,15 @@
+@import "../../styles/config/var";
+@import "../../styles/config/mixin";
+
+.section_our_resume {
+  .our-resume-center {
+    .our-resume-info {
+      .single-resume-info {
+        box-shadow: $boxShadowNormal;
+        cursor: pointer;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+    }
+  }
+}

@@ -1,7 +1,17 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { FaFacebook, FaInstagram, FaTwitter, FaDribbble, FaPhone, FaHome, FaEnvelope, FaUsers, FaKey } from "react-icons/fa";
-import "../styles/componentsStyle/_navbarTop.scss";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaDribbble,
+  FaPhone,
+  FaHome,
+  FaEnvelope,
+  FaUsers,
+  FaKey
+} from "react-icons/fa";
+import "./comStyles/navbarTop.scss";
 const NavbarTop = () => {
   return (
     <section className="section-navbar-top p-2">

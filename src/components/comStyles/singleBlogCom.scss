@@ -1,0 +1,38 @@
+@import "../../styles/config/var";
+@import "../../styles/config/mixin";
+.box-single-blog {
+  &:hover {
+    cursor: pointer;
+    .img-single-blog {
+      &::after {
+        visibility: visible;
+        opacity: 0.5;
+        transform: scale(1);
+      }
+    }
+    .img-single-blog img {
+      transform: scale(1.2);
+    }
+  }
+  .img-single-blog {
+    position: relative;
+    overflow: hidden;
+    img {
+      transition: $transitionNormal;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: $colorPrimary;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0);
+      transition: $transitionNormal;
+    }
+  }
+}

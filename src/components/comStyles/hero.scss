@@ -1,0 +1,44 @@
+@import "../../styles/config/var";
+@import "../../styles/config/mixin";
+
+.section-hero {
+  background-image: url("../../assets/home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .section-hero-center {
+    .my-info-hero {
+      max-width: 650px;
+      color: #000;
+      .button-hero-contact {
+        background-color: $colorPrimary;
+        transition: $transitionNormal;
+        &:hover {
+          background-color: $colorPrimaryHover;
+        }
+      }
+    }
+  }
+}
+@include tablate() {
+  .section-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../../assets/home.png");
+    .section-hero-center {
+      .my-info-hero {
+        padding-left: 0.5rem;
+        .hero-sub-heading {
+          color: #f1f1f1;
+          font-size: 1.2rem;
+        }
+        color: #fff;
+      }
+      .hero-heading {
+        font-size: 2.5rem;
+      }
+      .hero-desc {
+        color: #dfdfdf;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

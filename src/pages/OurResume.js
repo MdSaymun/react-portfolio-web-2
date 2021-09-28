@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import ReviewSlide from "../components/ReviewSlide";
 import SectionHeading from "../components/SectionHeading";
 import allData from "../data/data";
-import "../styles/pagesStyle/_ourResume.scss";
+import "./pagesStyles/ourResume.scss";
 const OurResume = () => {
   const { resumeData } = allData;
   return (

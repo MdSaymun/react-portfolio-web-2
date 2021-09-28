@@ -1,0 +1,41 @@
+@import "../../styles/config/var";
+@import "../../styles/config/mixin";
+
+.section-about-me {
+  .about-me-center {
+    .about-me-image {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 90%;
+      padding: 0 0 1.3rem 0;
+    }
+    .about-me-info {
+      .btn-download-cv {
+        background-color: $colorPrimary;
+        @include dFlex();
+        color: #fff;
+        transition: $transitionNormal;
+        &:hover {
+          background-color: $colorPrimaryHover;
+        }
+      }
+    }
+  }
+}
+@include mobile() {
+  .section-about-me {
+    .about-me-center {
+      .about-me-info {
+        h3 {
+          color: rgb(65, 65, 65);
+          font-size: 1.2rem;
+          padding: 0.5rem 0;
+        }
+        h1 {
+          font-size: 1.6rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

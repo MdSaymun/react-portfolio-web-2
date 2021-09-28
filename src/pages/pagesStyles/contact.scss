@@ -1,0 +1,40 @@
+@import "../../styles/config/var";
+@import "../../styles/config/mixin";
+.section_contact{
+  .section-contact-center{
+    .section-contact-form{
+      form{
+        .input-fild{
+          margin: 1rem 0 ; 
+          background-color: #fff;
+          border-bottom: 1px solid transparent;
+          &:hover{
+            border-bottom: 1px solid #000;
+          }
+          input,textarea{
+          width: 100%;
+           padding: 0.5rem 2rem;
+          background-color: transparent;
+          &:focus{
+            outline: none;
+          }
+          }
+        }
+        .input-comment{
+          margin: 1rem 13px  2rem 13px ;
+        }
+        .btn-contact-form{
+           border-bottom: 1px solid transparent;
+           cursor: pointer;
+          &:hover{
+             border-bottom: 1px solid #000;
+            background-color: orange;
+            
+          }
+        }
+        
+        
+      }
+    }
+  }
+}

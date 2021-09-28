@@ -1,10 +1,12 @@
 import React from "react";
-import "../styles/componentsStyle/_loading.scss";
+import "./comStyles/loading.scss";
 const Loading = () => {
   return (
-    <div class="lds-ripple">
-      <div></div>
-      <div></div>
+    <div className="h-screen flex">
+      <div className="lds-ripple m-auto">
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };

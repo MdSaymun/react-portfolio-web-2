@@ -1,0 +1,59 @@
+@import "../../styles/config/var";
+@import "../../styles/config/mixin";
+.section_portfolio {
+  .section-portfolio-center {
+    .menu-portfolio-items {
+      .menu-item {
+        margin: 0.2rem 0;
+        cursor: pointer;
+      }
+    }
+    .items-portfolio {
+      .row-portfolio-items {
+        .box-single-portfolio {
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          overflow: hidden;
+          &:hover {
+            .porfolio-info {
+              transform: translateX(0%);
+              visibility: visible;
+            }
+          }
+          .porfolio-info {
+            transform: translateX(-100%);
+            transition: $transitionNormal;
+            cursor: pointer;
+            visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          }
+        }
+      }
+
+      .seemore-btn-portfolio {
+        @media (min-width: 800px) {
+          padding: 1rem 2rem;
+          text-align: center;
+          font-size: 1.2rem;
+        }
+        width: 200px;
+        cursor: pointer;
+        background-color: $colorPrimary;
+        display: block;
+        @include mobile() {
+          padding: 0.5rem;
+          width: 90%;
+        }
+        margin: 2rem auto;
+        text-align: center;
+        &:hover {
+          background-color: $colorPrimaryHover;
+        }
+      }
+    }
+  }
+}

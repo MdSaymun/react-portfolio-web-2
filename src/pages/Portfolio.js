@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import CounterCom from "../components/CounterCom";
 import SectionHeading from "../components/SectionHeading";
 import allData from "../data/data";
-import "../styles/pagesStyle/_portfolio.scss";
+import "./pagesStyles/portfolio.scss";
 const Portfolio = () => {
   const { projectData } = allData;
   const [newProjectData, setNewProjectData] = useState(projectData);
@@ -40,7 +40,7 @@ const Portfolio = () => {
           {newCategory.map((item, i) => {
             return (
               <div
-                className={`px-3 py-2 rounded-md mx-2 border   ${index === i && "bg-gray-800 text-white"}`}
+                className={`px-3 py-2 menu-item rounded-md mx-2 border   ${index === i && "bg-gray-800 text-white"}`}
                 key={i}
                 onClick={() => {
                   handleFilterItem(item);
@@ -58,8 +58,7 @@ const Portfolio = () => {
               const { image, title, category } = item;
               return (
                 <Col key={i} lg={4} md={6}>
-                  <div className="box-single-portfolio relative">
-                    <img src={image} alt="" className="w-full" />
+                  <div className="box-single-portfolio relative h-64" style={{backgroundImage:`url(${image})`}}>                    
                     <div className="porfolio-info bg-gray-200 p-3 absolute top-0 left-0 w-full h-full">
                       <h2 className="text-xl font-bold">{title}</h2>
                       <small>{category}</small>
