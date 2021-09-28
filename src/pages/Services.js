@@ -18,7 +18,7 @@ function Services() {
               <Col key={i} lg={4} md={6}>
                 <div className="box-services text-center p-4 lg:my-5 my-3">
                   <img className="w-20 mx-auto mb-4" src={`/images/icons-image/${icon}`} alt="" />
-                  <h4 className="heading-services-item font-bold mb-2">{name}</h4>
+                  <h3 className="heading-services-item font-bold mb-2">{name}</h3>
                   <p className="description-services-item mb-2 text-gray-500 ">{text}</p>
                 </div>
               </Col>

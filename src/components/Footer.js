@@ -69,7 +69,7 @@ const Footer = () => {
                       })}
                     </div>
                   )}
-                  {title && <h2 className="text-gray-50">{title}</h2>}
+                  {title && <h4 className="text-gray-50">{title}</h4>}
                   {links && (
                     <div className="flex flex-col">
                       {links.map((item, i) => {
