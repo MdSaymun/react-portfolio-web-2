@@ -17,6 +17,11 @@
           background-color: $colorPrimaryHover;
         }
       }
+      .hero-heading {
+        @mixin mobile() {
+          font-size: 2.2rem;
+        }
+      }
     }
   }
 }

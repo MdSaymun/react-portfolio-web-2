@@ -2,31 +2,32 @@
 @import "../../styles/config/mixin";
 
 .section_navbar {
-  background-color: $colorPrimary;
+  background-color: #000;
   transition: all 0.5s;
-  padding: 1rem 0;
-
+  padding: 1rem 0 ;
+ 
   color: #fff;
   .navbar-center {
     @include dFlex(center, space-between);
-    @include tablate() {
-      .navlinks-container {
-        display: none;
-      }
-      .menu-icon {
-        display: block;
-      }
+     @include tablate (){
+      .navlinks-container{
+           display: none;
+          }
+          .menu-icon{
+            display: block;
+          }
     }
   }
   .button-hire-me {
     background-color: $colorPrimary;
   }
 }
-.stickyNavbar {
+.stickyNavbar{
   position: fixed;
   top: 0%;
   left: 0;
   width: 100%;
   padding: 1.5rem 0;
-  z-index: $navFixed;
+  z-index: $navFixed;    
 }
+
