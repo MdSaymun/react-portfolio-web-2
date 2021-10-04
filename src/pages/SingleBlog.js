@@ -7,8 +7,8 @@ import "./pagesStyles/_singleBlog.scss";
 const SingleBlog = () => {
   const { name } = useParams();
   const { blogData } = useGlobalContext();
-  const findItem = blogData && blogData.find((item) => item.title === name);
-  console.log(findItem);
+  const findItem = blogData && blogData.find((item) => "" + item.id === name);
+  // console.log(findItem);
   const { image, title, text, comment, date } = findItem;
   return (
     <section className="section-singleBlog">

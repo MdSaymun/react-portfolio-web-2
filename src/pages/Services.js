@@ -6,9 +6,9 @@ import "./pagesStyles/services.scss";
 function Services() {
   const { servicesData } = LocalData;
   return (
-    <section className="section_services md:py-20">
+    <section className="section_services md:py-20 ">
       <div className="services-center section md:container ">
-        <div className="services-header">
+        <div className="services-header py-10">
           <SectionHeading heading="Our Services" />
         </div>
         <Row>
@@ -26,7 +26,7 @@ function Services() {
           })}
         </Row>
       </div>
-    </section>
+    </section> 
   );
 }
 
